@@ -32,7 +32,7 @@ async function fetchPokemons() {
 }
 
 async function getPokemon(id) {
-    const url="http://pokeapi.co/api/v2/pokemon/" + id;
+    const url="https://pokeapi.co/api/v2/pokemon/" + id;
     const response = await fetch(url);
     const data = await response.json();
     createPokemonCard(data);
